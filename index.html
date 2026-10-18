@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudStarter | Welcome</title>
+    <meta name="description" content="A simple, modern website hosted on AWS S3.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">CloudStarter<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <p class="eyebrow">WELCOME TO CLOUDSTARTER</p>
+                <h1>Build your next idea <span>in the cloud.</span></h1>
+                <p class="hero-description">
+                    Simple, modern and responsive websites.
+                    Start your digital journey with us.
+                </p>
+                <a href="#services" class="btn">Explore Services →</a>
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <p class="eyebrow">WHO WE ARE</p>
+            <h2>About Us</h2>
+            <p class="section-description">
+                CloudStarter is a sample website created to demonstrate
+                how HTML, CSS and JavaScript work together on AWS S3.
+                Our goal is to make the web simple and accessible.
+            </p>
+        </section>
+
+        <section class="section services-section" id="services">
+            <div class="container">
+                <p class="eyebrow">WHAT WE DO</p>
+                <h2>Our Services</h2>
+
+                <div class="service-grid">
+                    <article class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Web Development</h3>
+                        <p>Clean HTML and CSS for a professional website.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>AWS Hosting</h3>
+                        <p>Host static website files using Amazon S3.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Responsive Design</h3>
+                        <p>A layout that adapts to mobile and desktop screens.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container contact-section" id="contact">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Contact Us</h2>
+            <p class="section-description">
+                This demo form validates your details in the browser.
+                It does not send or store messages.
+            </p>
+
+            <form id="contactForm" class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"
+                          placeholder="Write your message" required></textarea>
+
+                <button type="submit" class="btn">Submit Message</button>
+                <p id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span> CloudStarter. Built for the cloud.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
